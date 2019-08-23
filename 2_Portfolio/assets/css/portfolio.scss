@@ -274,7 +274,16 @@ body, html {
         justify-content: center;
         align-items: center;
 
-        h1 {
+        form {
+
+            .field {
+                margin: 10px;
+
+                input, textarea, div {
+                    
+                    right: 0;
+                }
+            }
         }
     }
    

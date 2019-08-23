@@ -374,6 +374,14 @@ body, html {
           align-items: center;
 }
 
+.section-contact .padding-all form .field {
+  margin: 10px;
+}
+
+.section-contact .padding-all form .field input, .section-contact .padding-all form .field textarea, .section-contact .padding-all form .field div {
+  right: 0;
+}
+
 /* Global ========================================================================*/
 .padding-all {
   padding-left: 200px;
