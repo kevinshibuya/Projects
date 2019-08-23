@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    color: #000000;
+}
+.navigation {
+    justify-content: start;
+}
+.navbar div a {
+    margin: auto;
+    color: #C02D54
+}
+.navbar-light .navbar-toggler {
+    border: none;
+}
+.icon {
+    width: 30px;
+    height: 2px;
+    margin: 7px 0;
+    background-color: #C02D54;
+}
+nav .nav-link:hover {
+    color: #FFFFFF;
+    background: #C02D54;
+    transition: 0.5s;
+}
+/*========================================================*/
+.landing {
+    background-image: url(../images/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #FFE2E2;
+    height: 80vh;
+}
+.landing h1 {
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(25,11,7,0.32);
+}
+.landing p {
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    color: #000000;
+    text-shadow: 2px 2px 3px rgba(25,11,7,0.32);
+}
+/*========================================================*/
+.benefits {
+    height: 600px;
+    color: #fff;
+    background-color: #C02D54;
+}
+.benefits svg {
+    margin-bottom: 40px;
+}
+/*========================================================*/
+.comments {
+    height: 400px;
+    background-color: #FFE2E2;
+}
+.comments img {
+    width: calc(7rem + 0.5vw);
+    margin-bottom: 50px;
+}
+.comments p {
+    font-style: italic;
+}
+.comments footer {
+    font-weight: 600;
+}
+/*========================================================*/
+.action {
+    height: 400px;
+}
+.action h1 {
+    font-size: calc(2rem + 0.6vw);
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+}
+.action-btn {
+    border: none;
+    font-size: calc(1.5rem + 0.6vw);
+    background: #53AE1F;
+    border-radius: 70px;
+    color: #fff;
+    font-weight: 600;
+    padding: 30px 70px;
+}
+.action-btn:hover {
+    opacity: 0.6;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+/*========================================================*/
+.footer {
+    padding: 2% 0;
+    background-color: #4B4B4B;
+}
+.footer p, .footer a {
+    color: #E1E1E1;
+}
+.footer a {
+    float: right;
+    margin: 10px;
+}
+/*========================================================*/
+.container-fluid {
+    padding: 0;
+}
+.row {
+    margin: 0;
+}
+.center-block {
+    display: inline-block;
+    text-align: center;
+}
+.row-margin {
+    margin: 0 80px;
+}
+.logo-size {
+    width: calc(8rem + 7vw);
+}
+.p-size {
+    font-size: calc(0.7rem + 0.4vw);
+}
+.h1-size {
+    font-size: calc(2rem + 0.5vw);
+}
+.padding-all {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+@media (max-width: 1200px) {
+    .landing {
+        height: 750px;
+    }
+    .padding-all {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+}
+@media (max-width: 992px) {
+    .landing {
+        height: 650px;
+    }
+    .benefits {
+        height: 800px;
+    }
+    .row-margin {
+        margin: 0 40px;
+    }
+    .padding-all {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media (max-width: 768px) {
+    .landing {
+        height: 600px;
+    }
+    .row-margin {
+        margin: 0;
+    }
+    .padding-all {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+/*======================================================*/
+.anim {
+    opacity: 0;
+}
+@keyframes anim1 {
+    from {
+        transform: translateY(-70px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

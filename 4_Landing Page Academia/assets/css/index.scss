@@ -1,0 +1,32 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+#navbar {
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 100px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  li {
+    margin: 0px 10px 0px 10px;
+  }
+  li:hover {
+    transform: scale(1.7);
+    background: white;
+    transition: 0.5s;
+    a {
+      color: black;
+      transition: 0.5s;
+    }
+  }
+}
+h1 {
+  color: black;
+}
