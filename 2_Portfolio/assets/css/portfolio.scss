@@ -277,16 +277,125 @@ body, html {
         form {
 
             .field {
+                display: grid;
+                grid-gap: 10px;
                 margin: 10px;
 
-                input, textarea, div {
+                label {
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                }
+
+                input, textarea {
+                    justify-self: end;
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 2;
+                    width: 200px;
+                    height: 25px;
+                    padding: 5px;
+                    border: 1px solid gray;
+                }
+
+                .button {
+                    font-size: 19px;
+                    font-family: 'Pacifico';
+                    overflow: visible;
+                    border-radius: 3px;
+                    position: relative;
+                    padding-right: 30px;
+                    background-color: #ECFBFF;
+                    border: 2px solid #A6E0EE;
+                    color: #2D7586;
+                    display: block;
+                    margin: 13% auto;
+                    height: 60px;
+                    width: 200px;
+                    cursor: pointer;
+                }
+
+                .button:hover {
+                    background-color: #cff5b3;
+                    border: 2px solid #cff5b3;
+                    color: #6AAA3B;
+                    padding-right: 6px;
+                    animation: bounce-in .3s;
+                    transition: 0.5s;
+
+                    svg {
+                        animation: flyaway 1.3s linear;
+                        top: -80px;
+                        right: -1000px;
                     
-                    right: 0;
+                        path {
+                            fill: #6AAA3B;
+                        }
+                    }
+                }
+
+                svg {
+                    position: absolute;
+                    top: 13px;
+                    right: 25px;
+                    height: 30px;
+                    width: auto;
+                    transition: transform .15s;
+                    
+                    path {
+                        fill: #2D7586;
+                    }
+                }
+
+                @keyframes flyaway {
+                    0%   {
+                        transform: rotate(10deg);
+                        top: 13px;
+                        right: 25px;
+                        height: 30px;
+                    }
+                    5% {
+                        transform: rotate(10deg);
+                        top: 13px;
+                        right: 0px;
+                        height: 30px;
+                    }
+                    20% {
+                        transform: rotate(-20deg);
+                        top: 13px;
+                        right: -130px;
+                        height: 45px;
+                    }  
+                    40% {
+                        transform: rotate(10deg);
+                        top: -40px;
+                        right: -280px;
+                        opacity: 1;
+                    }
+                    100% {
+                        transform: rotate(60deg);
+                        top: -200px;
+                        right: -1000px;
+                        height: 0;
+                        opacity: 0; 
+                    }
+                }
+                  
+                @keyframes bounce-in {
+                    0% { 
+                        padding-right: 30px;
+                    }
+                    40% {
+                        padding-right: 6px;
+                    }
+                    50% {
+                        padding-left: 30px;
+                    }
+                    100% {
+                        padding-left: 6px;
+                    }
                 }
             }
         }
     }
-   
 }
 
 /* Global ========================================================================*/
@@ -298,18 +407,20 @@ body, html {
 
 .title {
     font-size: calc(3.5rem + 1vw);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .sub {
     font-size: calc(0.8rem + 1vw);
-}
-
-.sub-title {
-    font-size: calc(0.8rem + 1vw);
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .text {
     font-size: calc(0.6rem + 0.4vw);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 1200px) {

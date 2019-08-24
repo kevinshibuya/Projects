@@ -375,11 +375,197 @@ body, html {
 }
 
 .section-contact .padding-all form .field {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
   margin: 10px;
 }
 
-.section-contact .padding-all form .field input, .section-contact .padding-all form .field textarea, .section-contact .padding-all form .field div {
-  right: 0;
+.section-contact .padding-all form .field label {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.section-contact .padding-all form .field input, .section-contact .padding-all form .field textarea {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  width: 200px;
+  height: 25px;
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+.section-contact .padding-all form .field .button {
+  font-size: 19px;
+  font-family: 'Pacifico';
+  overflow: visible;
+  border-radius: 3px;
+  position: relative;
+  padding-right: 30px;
+  background-color: #ECFBFF;
+  border: 2px solid #A6E0EE;
+  color: #2D7586;
+  display: block;
+  margin: 13% auto;
+  height: 60px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.section-contact .padding-all form .field .button:hover {
+  background-color: #cff5b3;
+  border: 2px solid #cff5b3;
+  color: #6AAA3B;
+  padding-right: 6px;
+  -webkit-animation: bounce-in .3s;
+          animation: bounce-in .3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section-contact .padding-all form .field .button:hover svg {
+  -webkit-animation: flyaway 1.3s linear;
+          animation: flyaway 1.3s linear;
+  top: -80px;
+  right: -1000px;
+}
+
+.section-contact .padding-all form .field .button:hover svg path {
+  fill: #6AAA3B;
+}
+
+.section-contact .padding-all form .field svg {
+  position: absolute;
+  top: 13px;
+  right: 25px;
+  height: 30px;
+  width: auto;
+  -webkit-transition: -webkit-transform .15s;
+  transition: -webkit-transform .15s;
+  transition: transform .15s;
+  transition: transform .15s, -webkit-transform .15s;
+}
+
+.section-contact .padding-all form .field svg path {
+  fill: #2D7586;
+}
+
+@-webkit-keyframes flyaway {
+  0% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    top: 13px;
+    right: 25px;
+    height: 30px;
+  }
+  5% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    top: 13px;
+    right: 0px;
+    height: 30px;
+  }
+  20% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+    top: 13px;
+    right: -130px;
+    height: 45px;
+  }
+  40% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    top: -40px;
+    right: -280px;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+    top: -200px;
+    right: -1000px;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes flyaway {
+  0% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    top: 13px;
+    right: 25px;
+    height: 30px;
+  }
+  5% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    top: 13px;
+    right: 0px;
+    height: 30px;
+  }
+  20% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+    top: 13px;
+    right: -130px;
+    height: 45px;
+  }
+  40% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    top: -40px;
+    right: -280px;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+    top: -200px;
+    right: -1000px;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes bounce-in {
+  0% {
+    padding-right: 30px;
+  }
+  40% {
+    padding-right: 6px;
+  }
+  50% {
+    padding-left: 30px;
+  }
+  100% {
+    padding-left: 6px;
+  }
+}
+
+@keyframes bounce-in {
+  0% {
+    padding-right: 30px;
+  }
+  40% {
+    padding-right: 6px;
+  }
+  50% {
+    padding-left: 30px;
+  }
+  100% {
+    padding-left: 6px;
+  }
 }
 
 /* Global ========================================================================*/
@@ -390,18 +576,20 @@ body, html {
 
 .title {
   font-size: calc(3.5rem + 1vw);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .sub {
   font-size: calc(0.8rem + 1vw);
-}
-
-.sub-title {
-  font-size: calc(0.8rem + 1vw);
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .text {
   font-size: calc(0.6rem + 0.4vw);
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1200px) {

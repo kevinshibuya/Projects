@@ -32,7 +32,7 @@
                     <p class="sub">Desenvolvedor Web Front-end.</p>
                 </div>
                 <div class="middle"
-                    data-sal="slide-down"
+                    data-sal="slide-left"
                     data-sal-duration="1000"
                     data-sal-delay="600"
                     data-sal-easing="ease-out-bounce"
@@ -70,7 +70,7 @@
                             data-sal-delay="100"
                             data-sal-easing="ease-out-bounce"
                         >
-                            <h1 class="sub-title">Rápido</h1>
+                            <h1 class="sub">Rápido</h1>
                             <p class="text">Trabalho em metodologias ágeis como Scrum, para maior eficiência.</p>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
                             data-sal-delay="200"
                             data-sal-easing="ease-out-bounce"
                         >
-                            <h1 class="sub-title">Responsivo</h1>
+                            <h1 class="sub">Responsivo</h1>
                             <p class="text">Projetos responsivos para atingir a maior gama de usuários possíveis.</p>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                             data-sal-delay="300"
                             data-sal-easing="ease-out-bounce"
                         >
-                            <h1 class="sub-title">Intuitivo</h1>
+                            <h1 class="sub">Intuitivo</h1>
                             <p class="text">Desings modernos com ênfase no UX, para facilidade na navegação.</p>
                         </div>
                     </div>
@@ -123,7 +123,7 @@
                             data-sal-delay="400"
                             data-sal-easing="ease-out-bounce"
                         >
-                            <h1 class="sub-title">Autodidata</h1>
+                            <h1 class="sub">Autodidata</h1>
                             <p class="text">Sempre aprendendo novas tecnologias e metodologias, inovando o conhecimento.</p>
                         </div>
                     </div>
@@ -135,7 +135,7 @@
                     data-sal-easing="ease-out-bounce"
                 >
                     <img class="picture" src="assets/img/me.png" alt="">
-                    <h1 class="sub-title">Quem sou eu?</h1>
+                    <h1 class="sub">Quem sou eu?</h1>
                     <p class="text">Eu sou um desenvolvedor Web Front-End, com o desejo de me tornar Web e Mobile Full-Stack. Possúo grande paixão por design e pela área de desenvolvimento de sistemas.</p>
                 </div>
                 <div class="get-sm-4"
@@ -144,7 +144,7 @@
                     data-sal-delay="200"
                     data-sal-easing="ease-out-bounce"
                 >
-                    <h1 class="sub-title">Skills</h1>
+                    <h1 class="sub">Skills</h1>
                     <ul class="skills">
                         <li class="text"><img class="skill" src="assets/img/html5.png" alt="">HTML5</li>
                         <li class="text"><img class="skill" src="assets/img/css3.png" alt="">CSS3</li>
@@ -184,8 +184,21 @@
         </div>
         <div class="section section-contact">
             <div class="padding-all">
-                <h1 class="title">Contato</h1>
-                <form name="contact" method="POST" data-netlify="true">
+                <h1 class="title"
+                    data-sal="slide-right"
+                    data-sal-duration="1000"
+                    data-sal-delay="200"
+                    data-sal-easing="ease-out-bounce"
+                >
+                    Contato
+                </h1>
+                <form name="contact" method="POST"
+                    data-netlify="true"
+                    data-sal="slide-left"
+                    data-sal-duration="1000"
+                    data-sal-delay="200"
+                    data-sal-easing="ease-out-bounce"
+                >
                     <div class="field">
                         <label class="text">Nome: </label>
                         <input type="text" name="name">
@@ -199,7 +212,13 @@
                         <textarea name="message"></textarea>
                     </div>
                     <div class="field">
-                        <button type="submit">Send</button>
+                        <button class="button text" type="submit">
+                            <p>Enviar</p>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                                <path id="paper-plane-icon" d="M462,54.955L355.371,437.187l-135.92-128.842L353.388,167l-179.53,124.074L50,260.973L462,54.955z
+                            M202.992,332.528v124.517l58.738-67.927L202.992,332.528z"></path> 
+                            </svg>
+                        </button>
                         <div data-netlify-recaptcha="true"></div>
                     </div>
                 </form>
