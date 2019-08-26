@@ -7,7 +7,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900&display=swap" rel="stylesheet">
-
+    
 
 
     <link rel="stylesheet" href="assets/css/portfolio.css">
@@ -37,7 +37,7 @@
                     data-sal-delay="600"
                     data-sal-easing="ease-out-bounce"
                 >
-                    <img src="assets/img/slide-down.png" alt="">
+                    <i class="fas fa-angle-double-down icon-style"></i>
                 </div>
                 <div class="left"
                     data-sal="slide-up"
@@ -55,38 +55,37 @@
                     data-sal="slide-right"
                     data-sal-duration="1000"
                     data-sal-easing="ease-out-bounce"
-                >Sobre</h1>
+                >
+                    Sobre
+                </h1>
                 <div class="get-sm-1">
                     <div class="fast">
-                        <img class="icon" src="assets/img/fast.png" alt="" 
-                            data-sal="flip-right"
-                            data-sal-duration="500"
-                            data-sal-delay="100"
-                            data-sal-easing="ease-out-bounce"
-                        >
                         <div
                             data-sal="fade"
                             data-sal-duration="500"
                             data-sal-delay="100"
                             data-sal-easing="ease-out-bounce"
                         >
+                            <div
+                                data-sal="flip-rigth"
+                                data-sal-duration="500"
+                                data-sal-delay="0"
+                                data-sal-easing="ease-out-bounce"
+                            >
+                                <i class="fas fa-skiing icon-style"></i>
+                            </div>
                             <h1 class="sub">Rápido</h1>
                             <p class="text">Trabalho em metodologias ágeis como Scrum, para maior eficiência.</p>
                         </div>
                     </div>
                     <div class="responsive">
-                        <img class="icon" src="assets/img/responsive.png" alt=""
-                            data-sal="flip-right"
-                            data-sal-duration="500"
-                            data-sal-delay="200"
-                            data-sal-easing="ease-out-bounce"
-                        >
                         <div
                             data-sal="fade"
                             data-sal-duration="500"
                             data-sal-delay="200"
                             data-sal-easing="ease-out-bounce"
                         >
+                            <i class="fas fa-mobile-alt icon-style"></i>
                             <h1 class="sub">Responsivo</h1>
                             <p class="text">Projetos responsivos para atingir a maior gama de usuários possíveis.</p>
                         </div>
@@ -94,35 +93,25 @@
                 </div>
                 <div class="get-sm-2">
                     <div class="intuitive">
-                        <img class="icon" src="assets/img/intuitive.png" alt=""
-                            data-sal="flip-right"
-                            data-sal-duration="500"
-                            data-sal-delay="300"
-                            data-sal-easing="ease-out-bounce"
-                        >
                         <div
                             data-sal="fade"
                             data-sal-duration="500"
                             data-sal-delay="300"
                             data-sal-easing="ease-out-bounce"
                         >
+                            <i class="far fa-lightbulb icon-style"></i>
                             <h1 class="sub">Intuitivo</h1>
                             <p class="text">Desings modernos com ênfase no UX, para facilidade na navegação.</p>
                         </div>
                     </div>
                     <div class="self-taught">
-                        <img class="icon" src="assets/img/self-taught.png" alt=""
-                            data-sal="flip-right"
-                            data-sal-duration="500"
-                            data-sal-delay="400"
-                            data-sal-easing="ease-out-bounce"
-                        >
                         <div
                             data-sal="fade"
                             data-sal-duration="500"
                             data-sal-delay="400"
                             data-sal-easing="ease-out-bounce"
                         >
+                            <i class="fab fa-leanpub icon-style"></i>
                             <h1 class="sub">Autodidata</h1>
                             <p class="text">Sempre aprendendo novas tecnologias e metodologias, inovando o conhecimento.</p>
                         </div>
@@ -137,6 +126,10 @@
                     <img class="picture" src="assets/img/me.png" alt="">
                     <h1 class="sub">Quem sou eu?</h1>
                     <p class="text">Eu sou um desenvolvedor Web Front-End, com o desejo de me tornar Web e Mobile Full-Stack. Possúo grande paixão por design e pela área de desenvolvimento de sistemas.</p>
+                    <div class="links">
+                        <a href="https://github.com/kevinshibuya"><i class="fab fa-linkedin-in icon-style"></i></a>
+                        <a href="https://www.linkedin.com/in/kevin-shibuya-150648178/"><i class="fab fa-github icon-style"></i></a>
+                    </div>
                 </div>
                 <div class="get-sm-4"
                     data-sal="slide-down"
@@ -166,7 +159,7 @@
                     data-sal-delay="200"
                     data-sal-easing="ease-out-bounce"
                 >
-                    <img src="assets/img/slide-down.png" alt="">
+                    <i class="fas fa-angle-double-right icon-style"></i>
                 </div>
                 <div class="slide">
                     <h1 class="title">Projetos</h1>
@@ -225,6 +218,7 @@
         </div>
     </div>
     
+    <script src="https://kit.fontawesome.com/b9457940e3.js"></script>
     <script src="assets/js/node_modules/sal.js/dist/sal.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/vendors/scrolloverflow.min.js" integrity="sha256-R7CttZ4L0/szai0hbFUlPDiRaEJmqYuvLhyAOr19vQg=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.js" integrity="sha256-e13jRNqOX98m6UAwI/yZTpcDseJtA8s86yfFs4Sqrv8=" crossorigin="anonymous"></script>
