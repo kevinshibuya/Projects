@@ -8,7 +8,7 @@ new fullpage('#fullpage', {
     scrollOverflow: true,
     slidesNavigation: true,
     controlArrows: false
-})
+});
 
 sal({
     threshold: 0.1,
