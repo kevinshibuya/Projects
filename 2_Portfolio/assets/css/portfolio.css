@@ -6,7 +6,6 @@ body, html {
   letter-spacing: 3px;
 }
 
-/* Animatios ==========================================================================*/
 /* Sections ========================================================*/
 .section-landing {
   text-align: left;
@@ -626,32 +625,6 @@ body, html {
   }
 }
 
-/* Background =============================================================================*/
-/* .content {
-    overflow: auto;
-    position: relative;
-}
-
-.content:before {
-    content: "";
-    position: fixed;
-    top: -5%;
-    left: -5%;
-    z-index: -1;
-
-    display: block;
-    background-image: url(../img/bg-img.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 110%;
-    height: 110%;
-
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);
-    filter: blur(3px);
-} */
 /* Fullpage.js =============================================================================*/
 #fp-nav span {
   background: black !important;
