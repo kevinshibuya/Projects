@@ -15,53 +15,23 @@ sal({
     once: false
 });
 
-const targets = document.querySelectorAll('img');
+// const targets = document.querySelectorAll('img');
 
-const lazyLoad = target => {
-    const io = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            console.log('something');
-            if(entry.isIntersecting) {
-                const img = entry.target;
-                const src = img.getAttribute('data-lazy');
+// const lazyLoad = target => {
+//     const io = new IntersectionObserver((entries, observer) => {
+//         entries.forEach(entry => {
+//             console.log('something');
+//             if(entry.isIntersecting) {
+//                 const img = entry.target;
+//                 const src = img.getAttribute('data-lazy');
 
-                img.setAttribute('src', src);
+//                 img.setAttribute('src', src);
 
-                observer.disconnect();
-            }
-        });
-    });
+//                 observer.disconnect();
+//             }
+//         });
+//     });
 
-    io.observe(target);
-}
-targets.forEach(lazyLoad);
-
-// let tl = anime.timeline({
-//     easing: 'easeOutElastic(.8, .6)',
-//     duration: 1000
-// })
-
-// tl.add({
-//     targets: '.anim',
-//     duration: 3000,
-//     translateX: [-250, 0],
-//     opacity: 1,
-//     delay: anime.stagger(500)
-// })
-
-// const animate = document.querySelectorAll(".anim");
-
-// const observer = new IntersectionObserver((entries) => {
-//     entries.forEach(entry => {
-//         if(entry.intersectionRatio > 0) {
-//             entry.target.style.animation = `anim1 1s ${entry.target.dataset.delay} forwards ease-out`;
-//         }
-//         else {
-//             entry.target.style.animation = 'none';
-//         }
-//     })
-// })
-
-// animate.forEach(animate => {
-//         observer.observe(animate);
-// })
+//     io.observe(target);
+// }
+// targets.forEach(lazyLoad);
