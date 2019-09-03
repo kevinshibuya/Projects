@@ -149,7 +149,7 @@
             </div>
         </div>
         <div class="section section-projects">
-            <div class="padding-all">
+            <!-- <div class="padding-all"> -->
                 <div class="slide"
                     data-sal="slide-left"
                     data-sal-duration="1000"
@@ -178,9 +178,7 @@
                             </div>
                         </a>
                     </div>
-                    
                 </div>
-            </div>
         </div>
         <div class="section section-contact">
             <div class="padding-all">
@@ -192,35 +190,48 @@
                 >
                     Contato
                 </h1>
-                <form name="contact" method="POST"
-                    data-netlify="true"
-                    data-sal="slide-left"
-                    data-sal-duration="1000"
-                    data-sal-delay="200"
-                    data-sal-easing="ease-out-bounce"
-                >
-                    <div class="field">
-                        <label class="text" for="Name">Nome: </label>
-                        <input type="text" name="name" id="Name">
-                    </div>
-                    <div class="field">
-                        <label class="text" for="Email">Email: </label>
-                        <input type="email" name="email" id="Email">
-                    </div>
-                    <div class="field">
-                        <label class="text" for="Message">Mensagem: </label>
-                        <textarea name="message" id="Message"></textarea>
-                    </div>
-                    <div class="field">
-                        <button class="button" type="submit">
-                            <p class="text">ENVIAR</p>
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-                                <path id="paper-plane-icon" d="M462,54.955L355.371,437.187l-135.92-128.842L353.388,167l-179.53,124.074L50,260.973L462,54.955zM202.992,332.528v124.517l58.738-67.927L202.992,332.528z"></path> 
-                            </svg>
-                        </button>
-                        <div class="captcha" data-netlify-recaptcha="true"></div>
-                    </div>
-                </form>
+                <div class="content">
+                    <ul class="area-1"
+                        data-sal="slide-down"
+                        data-sal-duration="1000"
+                        data-sal-delay="200"
+                        data-sal-easing="ease-out-bounce"
+                    >
+                        <h1 class="sub">Entre em contato ou...</h1>
+                        <li class="text"><i class="fas fa-mobile-alt icon-size"></i>(13)99690-0898</li>
+                        <li class="text"><i class="far fa-envelope icon-size"></i>kevinshibuya@hotmail.com</li>
+                    </ul>
+                    <form name="contact" method="POST"
+                        data-netlify="true"
+                        data-sal="slide-up"
+                        data-sal-duration="1000"
+                        data-sal-delay="200"
+                        data-sal-easing="ease-out-bounce"
+                    >
+                        <h1 class="sub">Deixe uma mensagem!</h1>
+                        <div class="field">
+                            <label class="text" for="Name">Nome: </label>
+                            <input type="text" name="name" id="Name">
+                        </div>
+                        <div class="field">
+                            <label class="text" for="Email">Email: </label>
+                            <input type="email" name="email" id="Email">
+                        </div>
+                        <div class="field">
+                            <label class="text" for="Message">Mensagem: </label>
+                            <textarea name="message" id="Message"></textarea>
+                        </div>
+                        <div class="field">
+                            <button class="button" type="submit">
+                                <p class="text">ENVIAR</p>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                                    <path id="paper-plane-icon" d="M462,54.955L355.371,437.187l-135.92-128.842L353.388,167l-179.53,124.074L50,260.973L462,54.955zM202.992,332.528v124.517l58.738-67.927L202.992,332.528z"></path> 
+                                </svg>
+                            </button>
+                            <div class="captcha" data-netlify-recaptcha="true"></div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
